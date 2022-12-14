@@ -1,0 +1,534 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    font-family: 'Roboto Mono', monospace;
+    overflow: hidden;
+}
+
+.bold {
+    color: #ff1900;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Nav styling */
+
+#nav {
+    margin: 0 0 -2px 0;
+    padding: 0 0 0 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 8vh;
+    background-color: #000;
+    border-bottom: solid #ff1900;
+    border-width: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    color: #fff;
+    z-index: 10;
+}
+
+#title {
+    margin: 0 auto 0 0;
+    padding: 0 0 0 2%;
+    color: #ff1900;
+}
+
+.nav--link {
+    margin: 0;
+    padding:  0 2% 0 0;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav--bold {
+    margin: 0;
+    padding:  0 2% 0 0;
+    font-size: 1rem;
+    color: #ff1900;
+    text-decoration: none;
+}
+
+.nav--link:active {
+    color: #ff1900;
+}
+
+/* Home */
+
+#home {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 92vh;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#home--title {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 100%;
+    color: #fff;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home--title > h1 {
+    margin: 0;
+    padding: 0;
+    width: 95%;
+}
+
+#home--hero {
+    padding: 0;
+    margin: 0 0 0 -2px;
+    width: 50%;
+    height: 100%;
+    border-left: 2px solid #ff1900;
+}
+
+#home--img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 70%;
+    background-image: url("../images/homeHero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home--hero--contact {
+    margin: -2px 0 0 0;
+    padding: 0;
+    width: 100%;
+    height: 30%;
+    border-top: 2px solid #ff1900;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#home--hero--contact > h1{
+    margin: 0 5% 0 5%;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+.hero--btn {
+    margin: 0 5% 0 5%;
+    padding: 0 5px 0 5px;
+    background-color: #ff1900;
+    color: #fff;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+}
+
+.hero--btn > h1{
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+/* About */
+
+#about {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 92vh;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#about--img {
+    margin: 0 -2px 0 0;
+    padding: 0;
+    height: 100%;
+    width: 40%;
+    border-right: solid 2px #ff1900;
+    background-image: url("../images/about.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about--text {
+    margin: 0;
+    padding: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about--text > p {
+    margin: 0 10% 0 10%;
+    padding: 0;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.about--btn {
+    margin: 0;
+    padding: 0 5px 0 5px;
+    background-color: #ff1900;
+    color: #fff;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+}
+
+/* Services */
+
+#services {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 92vh;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#services--text {
+    width: 60%;
+    height: 100%;
+    border-right: 2px solid #ff1900;
+    padding: 0;
+    margin: 0 -2px 0 0;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+#services--text > p {
+    margin: 0 5% 0 5%;
+    padding: 0;
+    color: #fff;
+}
+
+.serv--btn {
+    margin: 0;
+    padding: 0 5px 2px 5px;
+    background-color: #ff1900;
+    color: #fff;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+}
+
+#services--list {
+    margin: 0;
+    padding: 0;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.list--item {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    width: 100%;
+    transition: .5s ease;
+}
+
+.list--item > h1 {
+    margin: 0;
+    padding: 0 0 0 5%;
+}
+
+.list--item:hover {
+    background-color: #ff1900;
+}
+
+/* Contact */
+
+#contact {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 92vh;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact--text {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 0 0 5%;
+    padding: 0;
+}
+
+iframe {
+    margin: 0;
+    padding: 0;
+    width: 30vw;
+    height: 30vw;
+}
+
+/* Transistion */
+
+#transition {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    bottom: 0;
+    z-index: 15;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#transition > h1 {
+    font-size: 4rem;
+    color: #ff1900;
+}
+
+/* Responsive Horizontal */
+
+@media (max-width: 1500px) {
+    #home--title {
+        font-size: 2rem;
+    }
+
+    #contact--text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1150px) {
+    #home--title {
+        font-size: 1.5rem;
+    }
+
+    #about--text {
+        width: 70%;
+    }
+
+    #about--text > p {
+        font-size: .75rem;
+    }
+
+    #about--img {
+        width: 30%;
+    }
+}
+@media (max-width: 960px) {
+    #services--text {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 800px) {
+    #home {
+        flex-direction: column;
+    }
+
+    #home--title {
+        width: 100%;
+        height: calc(92vh / 2);
+        border-bottom: solid #ff1900 2px;
+    }
+
+    #home--title > h1{
+        margin: 0 5% 0 5%;
+        font-size: 2rem;
+    }
+
+    #home--hero {
+        width: 100%;
+        height: calc(92vh / 2);
+    }
+
+    #home--img {
+        height: 40%;
+    }
+
+    #home--hero--contact {
+        height: 60%;
+    }
+
+    #about {
+        flex-direction: column;
+    }
+
+    #about--img {
+        width: 100%;
+        height: 30%;
+        border-right: none;
+        border-bottom: solid 2px #ff1900;
+        margin-bottom: -2px;
+    }
+
+    #about--text {
+        width: 100%;
+        height: 70%;
+    }
+
+    #about--img {
+        background-position: 0;
+    }
+
+    #services {
+        flex-direction: column;
+    }
+
+    #services--text {
+        width: 100%;
+        height: 50%;
+        border-right: none;
+        border-bottom: solid 2px #ff1900;
+        margin-bottom: -2px;
+    }
+
+    #services--list {
+        width: 100%;
+        height: 50%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 10px;
+        gap: 0;
+    }
+
+    .list--item {
+        display: flex;
+        align-items: center;
+    }
+
+    #contact {
+        flex-direction: column;
+    }
+
+    #contact--text {
+        margin: 5% 0 0 0;
+    }
+
+    iframe {
+        margin-top: 15px;
+        width: 60vw;
+        height: 60vw;
+    }
+
+    #transition > h1 {
+        font-size: 3rem;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    #title {
+        font-size: 1.5rem;
+    }
+
+    .nav--link {
+        font-size: .85rem;
+    }
+
+    .nav--bold {
+        font-size: .85rem;
+    }
+
+    #about--text > p {
+        font-size: .6rem;
+        margin: 0 2% 0 2%;
+    }
+
+    .list--item > h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    #transition > h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 550px) {
+    #title {
+        font-size: 1rem;
+    }
+
+    .nav--link {
+        font-size: .75rem;
+    }
+
+    .nav--bold {
+        font-size: .75rem;
+    }
+    
+    #home--hero--contact > h1{
+        font-size: 1rem;
+    }
+
+    #hero--btn > h1{
+        font-size: 1rem;
+    }
+
+    #services--text > p{
+        font-size: .65rem;
+    }
+
+    .list--item > h1 {
+        font-size: 1rem;
+    }
+
+    #transition > h1 {
+        font-size: 1.5rem;
+    }
+
+    #contact--text {
+        font-size: .75rem;
+    }
+}
+
+/* Responsive Verticle */
+
+@media (max-height: 700px) {
+    #home--title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-height: 600px) {
+    #about--text > p {
+        font-size: .8rem;
+    }
+}
